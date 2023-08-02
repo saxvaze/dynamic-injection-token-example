@@ -1,0 +1,4 @@
+<p>{{ serviceData }}</p>
+<div (click)="getUserType()">Click Me</div>
+<div (click)="changeUserType()">Change user type</div>
+<div *ngIf="tokenSubject">{{ ((tokenSubject | async)?.getData() | async)?.userType }}</div>
